@@ -128,7 +128,6 @@ async def process_timestamps(message: types.Message, state: FSMContext):
             os.remove(f)
     
     await state.clear()
-
 async def main():
     await dp.start_polling(bot)
 
